@@ -201,7 +201,6 @@ func (tree *BinarySearchTree) Delete(value int) {
 			tree.Root = nil
 			return
 		}
-		println("ggg")
 		// 如果删除的是父节点的左儿子,父节点左孩子置空即直接删除
 		if parentNode.Left != nil && currentNode.Value == value {
 			parentNode.Left = nil
